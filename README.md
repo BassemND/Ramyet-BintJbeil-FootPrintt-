@@ -1,22 +1,24 @@
 # 🗺️ Urban Footprint Mapping – Ramyet Cadastre (Bint Jbeil, Lebanon)
 
 ## 📍 Overview
-This project presents a GIS-based mapping of the urban footprint in **Ramyet village**, located in the **Bint Jbeil District** of southern Lebanon. The work was conducted during my GIS work at **UN-Habitat Lebanon** using **QGIS** and satellite imagery provided by **Bing Maps**.
+This project was part of my GIS work with **UN-Habitat Lebanon**, where I digitized the built-up area in **Ramyet village**, located in the Bint Jbeil District in southern Lebanon. I used **QGIS** and **Bing satellite imagery** to manually trace structures and analyze the urban footprint.
 
-The goal was to visualize the **extent of built-up areas** within the cadastre for potential use in post-conflict analysis, urban planning, and humanitarian research. The mapping was completed during the **September 2024 war in Lebanon**, although the satellite imagery was captured **before the conflict**.
+The goal was to visualize the **extent of built-up areas** within the cadastre for potential use in post-conflict analysis, urban planning, and humanitarian research. The mapping was completed during the **September 2024 war in Lebanon**.
+
+The Bing imagery used was captured **before the conflict**, so this map serves as a **baseline reference** of existing structures in the area.
 
 ---
 
 ## 🎯 Objective
 The urban footprint layer may support:
-- Monitoring war impact or damage to the built environment
-- Estimating density of construction vs. total land
-- Pre/post-conflict spatial assessments
-- Humanitarian or reconstruction planning
+- Estimate the extent of construction within the cadaster
+- Provide spatial data that could help analyze war-related damage or urban change
+- Support potential humanitarian planning, mapping, or research
 
 ---
 
 ## 🛠 Tools & Methods
+
 - **Software**: QGIS
 - **Imagery**: Bing Satellite Imagery (pre-war)
 - **Technique**: Manual digitization of built-up areas using QGIS editing tools
@@ -24,28 +26,16 @@ The urban footprint layer may support:
 
 ## 🧪 Methodology
 
-The goal of this project was to manually digitize the urban footprint (built-up areas) in the village of **Ramyet**, located in the Bint Jbeil district of southern Lebanon.
-
-### Workflow:
-1. **Data Preparation**  
-   - Imported the cadastral boundary shapefile for Ramyet into QGIS.
-   - Loaded Bing satellite imagery as a base layer using XYZ Tiles.
-
-2. **Digitizing**  
-   - Used QGIS editing tools to manually trace built-up areas (houses, buildings, structures).
-   - Each polygon was added to a new layer named `ramyet_footprint`.
-
-3. **Area Calculation**  
-   - Calculated surface area of each polygon using QGIS field calculator (in km²).
-   - Summed total built-up area and compared it to total cadaster area.
-
-4. **Export & Visualization**  
-   - Took two screenshots from QGIS showing:
-     - The Bing satellite image with the Ramyet cadastre boundary.
-     - The digitized built-up polygons over the satellite base.
+1. I loaded the Ramyet cadastre shapefile and Bing imagery into QGIS.
+2. Using the digitizing tool, I traced each visible structure manually — building a polygon layer of built-up areas.
+3. I calculated the area of each polygon using the QGIS field calculator, then summed the results.
+4. I exported two map screenshots:
+   - One showing the cadastre boundary on the satellite image
+   - One showing the built-up areas I digitized
    - Saved the screenshots as PNG images and added them to the `Maps/` folder.
    - Included the final digitized shapefile (with `.shp`, `.shx`, `.dbf`, `.prj`) in the `Data/` folder for demonstration purposes.
 
+This was a hands-on project that helped me practice real GIS mapping workflows under real-world conditions.
 
 ### Key Stats:
 - **Total Cadastre Area**: 6.120 km²  
