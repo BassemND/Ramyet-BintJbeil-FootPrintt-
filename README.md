@@ -1,4 +1,4 @@
-# 🗺️ Urban Footprint Mapping – Ramyet Cadastre (Bint Jbeil, Lebanon)
+# 🗺️ Urban Footprint Mapping – Ramyet (Bint Jbeil, Lebanon)
 
 ## 📍 Overview
 This project was part of my GIS work with **UN-Habitat Lebanon**, where I digitized the built-up area in **Ramyet village**, located in the Bint Jbeil District in southern Lebanon. I used **QGIS** and **Bing satellite imagery** to manually trace structures and analyze the urban footprint.
